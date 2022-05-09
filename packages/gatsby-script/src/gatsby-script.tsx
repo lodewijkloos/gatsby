@@ -2,12 +2,15 @@ import React, { useEffect, useContext } from "react"
 import { PartytownContext } from "./partytown-context"
 import type { ReactElement, ScriptHTMLAttributes } from "react"
 import type { PartytownProps } from "@builder.io/partytown/react"
+import "./request-idle-callback-shim"
 
 export enum ScriptStrategy {
   postHydrate = `post-hydrate`,
   idle = `idle`,
   offMainThread = `off-main-thread`,
 }
+
+console.log(`eh3edhedhje`)
 
 // eslint-disable-next-line @typescript-eslint/naming-convention
 export interface ScriptProps
