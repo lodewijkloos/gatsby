@@ -41,7 +41,7 @@ exports.onCreatePage = async ({ page, actions }) => {
   const { createPage, deletePage } = actions
 
   // Check if the page is a localized 404
-  if (page.path.match(/^\/[a-z]{2}\/404\/$/)) {
+  if (page.path.match(/^\/[a-z]{2}-*([a-z]{2})*\/404\/$/)) {
     const oldPage = { ...page }
 
     // Get the language code from the path, and match all paths
