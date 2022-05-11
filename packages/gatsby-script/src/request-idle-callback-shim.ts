@@ -20,4 +20,4 @@ function _cancelIdleCallback(id?: number | undefined): void {
 }
 
 window.requestIdleCallback = window.requestIdleCallback || _requestIdleCallback
-window.cancelIdleCallback = window._cancelIdleCallback || _cancelIdleCallback
+window.cancelIdleCallback = window.cancelIdleCallback || _cancelIdleCallback
