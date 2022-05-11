@@ -10,8 +10,6 @@ export enum ScriptStrategy {
   offMainThread = `off-main-thread`,
 }
 
-console.log(`eh3edhedhje`)
-
 // eslint-disable-next-line @typescript-eslint/naming-convention
 export interface ScriptProps
   extends Omit<

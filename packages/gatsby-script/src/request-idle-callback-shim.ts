@@ -1,9 +1,9 @@
+// https://developer.chrome.com/blog/using-requestidlecallback/#checking-for-requestidlecallback
+
 function _requestIdleCallback(
   callback: IdleRequestCallback
 ): ReturnType<typeof setTimeout> {
   const startTime = Date.now()
-
-  console.log(`Shimmed one workks`)
 
   return setTimeout(function () {
     callback({
